@@ -16,14 +16,14 @@ namespace HeroesLibrary
         public int Move_speed { get; set; }
         public string Difficulty { get; set; }
 
-        public Hero(string name, string mainAttribute, int damage, string attackType, int moveSpeed, string difficulty)
+        public Hero(string Name, string Main_attribute, int Damage, string Attack_type, int Move_speed, string Difficulty)
         {
-            Name = name;
-            Main_attribute = mainAttribute;
-            Damage = damage;
-            Attack_type = attackType;
-            Move_speed = moveSpeed;
-            Difficulty = difficulty;
+            this.Name = Name;
+            this.Main_attribute = Main_attribute;
+            this.Damage = Damage;
+            this.Attack_type = Attack_type;
+            this.Move_speed = Move_speed;
+            this.Difficulty = Difficulty;
         }
 
         public override string ToString()

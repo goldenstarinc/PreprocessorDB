@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\notso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\DataProcessor\\DataProcessor.csproj": {
-                "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\DataProcessor\\DataProcessor.csproj"
+              "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\DataProcessor\\DataProcessor.csproj": {
+                "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\DataProcessor\\DataProcessor.csproj"
               }
             }
           }
@@ -79,16 +79,16 @@
         }
       }
     },
-    "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\DataProcessor\\DataProcessor.csproj": {
+    "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\DataProcessor\\DataProcessor.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\DataProcessor\\DataProcessor.csproj",
+        "projectUniqueName": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\DataProcessor\\DataProcessor.csproj",
         "projectName": "DataProcessor",
-        "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\DataProcessor\\DataProcessor.csproj",
+        "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\DataProcessor\\DataProcessor.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\HeroesLibrary\\HeroesLibrary.csproj": {
-                "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\HeroesLibrary\\HeroesLibrary.csproj"
+              "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\HeroesLibrary\\HeroesLibrary.csproj": {
+                "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\HeroesLibrary\\HeroesLibrary.csproj"
               }
             }
           }
@@ -98,11 +98,11 @@
         "net48": {}
       }
     },
-    "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\HeroesLibrary\\HeroesLibrary.csproj": {
+    "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\HeroesLibrary\\HeroesLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\HeroesLibrary\\HeroesLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\HeroesLibrary\\HeroesLibrary.csproj",
         "projectName": "HeroesLibrary",
-        "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\Project2\\HeroesLibrary\\HeroesLibrary.csproj",
+        "projectPath": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\HeroesLibrary\\HeroesLibrary.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
