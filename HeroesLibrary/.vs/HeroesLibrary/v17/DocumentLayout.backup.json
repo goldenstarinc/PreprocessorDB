@@ -30,7 +30,7 @@
               "RelativeDocumentMoniker": "Hero.cs",
               "ToolTip": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\HeroesLibrary\\Hero.cs",
               "RelativeToolTip": "Hero.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA5wBkAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-20T07:56:47.348Z",
               "EditorCaption": ""
@@ -45,8 +45,7 @@
               "RelativeToolTip": "..\\ConsoleApp1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T07:56:44.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T07:56:44.982Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "RelativeToolTip": "..\\DataProcessor\\DataProcessor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T07:56:41.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T07:56:41.671Z"
             }
           ]
         }
