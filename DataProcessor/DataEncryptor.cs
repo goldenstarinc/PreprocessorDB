@@ -36,7 +36,7 @@ namespace DataProcessor
         /// </summary>
         /// <param name="wb">Файл Excel</param>
         /// <returns>Список зашифрованных записей типа BigInteger</returns>
-        public List<BigInteger> GetEctryptedRecords()
+        public List<BigInteger> GetEncryptedRecords()
         {
             List<BigInteger> encryptedRecords = new List<BigInteger>();
 

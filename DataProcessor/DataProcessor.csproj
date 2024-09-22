@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDecryptor.cs" />
     <Compile Include="DataEncryptor.cs" />
     <Compile Include="HeroRepository.cs" />
     <Compile Include="ExcelFile.cs" />
