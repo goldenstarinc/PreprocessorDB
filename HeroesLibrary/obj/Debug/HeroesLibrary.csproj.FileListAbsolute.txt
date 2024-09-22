@@ -16,3 +16,5 @@ C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\HeroesLibrary\obj\Debug\He
 C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\HeroesLibrary\obj\Debug\HeroesLi.FE8B3ACA.Up2Date
 C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\HeroesLibrary\obj\Debug\HeroesLibrary.dll
 C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\HeroesLibrary\obj\Debug\HeroesLibrary.pdb
+C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\HeroesLibrary\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\HeroesLibrary\bin\Debug\System.Numerics.Vectors.xml

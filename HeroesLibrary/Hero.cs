@@ -26,6 +26,7 @@ namespace HeroesLibrary
             this.Difficulty = Difficulty;
         }
 
+
         public override string ToString()
         {
             return $"Name: {Name}; Main_attribute: {Main_attribute}; Damage: {Damage}; Attack_type: {Attack_type}; Move_speed: {Move_speed}; Difficulty: {Difficulty}";

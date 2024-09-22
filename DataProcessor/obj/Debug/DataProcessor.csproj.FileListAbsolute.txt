@@ -20,3 +20,5 @@ C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\DataProcessor\obj\Debug\Da
 C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\DataProcessor\obj\Debug\DataProc.18A6199F.Up2Date
 C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\DataProcessor\obj\Debug\DataProcessor.dll
 C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\DataProcessor\obj\Debug\DataProcessor.pdb
+C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\DataProcessor\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\notso\OneDrive\Desktop\GitHub\PreprocessorDB\DataProcessor\bin\Debug\System.Numerics.Vectors.xml

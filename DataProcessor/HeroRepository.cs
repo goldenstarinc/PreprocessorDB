@@ -1,24 +1,35 @@
-﻿using System;
+﻿using Aspose.Cells;
+using HeroesLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HeroesLibrary;
-using Aspose.Cells;
 
 namespace DataProcessor
 {
-    public class DataProcessor
+    /// <summary>
+    /// Класс, отвечающий за чтение данных героев
+    /// Для обработки данных использует библиотеку Aspose.Cells
+    /// </summary>
+    public class HeroRepository
     {
-        private Encoding _alternateEncoding = Encoding.GetEncoding("IBM437");
-        // Метод для чтения базы данных из Excel-файла
-        public static List<Hero> ReadHeroesFromExcel(string filePath)
+        // Файл Excel с данными о героях
+        private Workbook _workbook;
+        public HeroRepository(string filePath)
+        {
+            Workbook workbook = new Workbook(filePath);
+        }
+
+        /// <summary>
+        /// Считывает героев из данного Excel файла
+        /// </summary>
+        /// <returns>Список объектов типа Hero</returns>
+        private List<Hero> ReadHeroes()
         {
             List<Hero> heroes = new List<Hero>();
 
-            // Открываем Excel-файл
-            Workbook workbook = new Workbook(filePath);
-            Worksheet worksheet = workbook.Worksheets[0];
+            Worksheet worksheet = _workbook.Worksheets[0];
 
             // Получаем диапазон данных
             Cells cells = worksheet.Cells;
