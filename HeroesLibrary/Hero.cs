@@ -16,6 +16,7 @@ namespace HeroesLibrary
         public int Move_speed { get; set; }
         public string Difficulty { get; set; }
 
+
         public Hero(string Name, string Main_attribute, int Damage, string Attack_type, int Move_speed, string Difficulty)
         {
             this.Name = Name;
