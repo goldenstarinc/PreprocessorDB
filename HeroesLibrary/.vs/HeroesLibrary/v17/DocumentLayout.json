@@ -1,12 +1,118 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\notso\\OneDrive\\Desktop\\GitHub\\PreprocessorDB\\HeroesLibrary\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GITHUB\\PreprocessorDB\\HeroesLibrary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}|..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\Interface_Preprocessor_WPF.csproj|c:\\users\\admin\\source\\repos\\interface_preprocessor_wpf\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}|..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\Interface_Preprocessor_WPF.csproj|c:\\users\\admin\\source\\repos\\interface_preprocessor_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DEA716F-5C4A-41E1-99FA-B838B7E5D7C0}|..\\DataProcessor\\DataProcessor.csproj|c:\\users\\admin\\documents\\github\\preprocessordb\\dataprocessor\\excelfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DEA716F-5C4A-41E1-99FA-B838B7E5D7C0}|..\\DataProcessor\\DataProcessor.csproj|c:\\users\\admin\\documents\\github\\preprocessordb\\dataprocessor\\dataencryptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}|..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\Interface_Preprocessor_WPF.csproj|c:\\users\\admin\\source\\repos\\interface_preprocessor_wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}|..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\Interface_Preprocessor_WPF.csproj|c:\\users\\admin\\source\\repos\\interface_preprocessor_wpf\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Window1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Interface_Preprocessor_WPF\\Window1.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\Window1.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Interface_Preprocessor_WPF\\Window1.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\Window1.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T15:23:44.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Interface_Preprocessor_WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Interface_Preprocessor_WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T14:36:29.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataEncryptor.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GITHUB\\PreprocessorDB\\DataProcessor\\DataEncryptor.cs",
+              "RelativeDocumentMoniker": "..\\DataProcessor\\DataEncryptor.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GITHUB\\PreprocessorDB\\DataProcessor\\DataEncryptor.cs",
+              "RelativeToolTip": "..\\DataProcessor\\DataEncryptor.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAhwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T15:25:00.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Interface_Preprocessor_WPF\\Window1.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\Window1.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Interface_Preprocessor_WPF\\Window1.xaml",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-25T15:23:03.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Interface_Preprocessor_WPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Interface_Preprocessor_WPF\\MainWindow.xaml",
+              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\Interface_Preprocessor_WPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-25T15:16:11.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExcelFile.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GITHUB\\PreprocessorDB\\DataProcessor\\ExcelFile.cs",
+              "RelativeDocumentMoniker": "..\\DataProcessor\\ExcelFile.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GITHUB\\PreprocessorDB\\DataProcessor\\ExcelFile.cs",
+              "RelativeToolTip": "..\\DataProcessor\\ExcelFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T14:37:00.095Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
