@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroesLibrary", "HeroesLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProcessor", "..\DataProcessor\DataProcessor.csproj", "{3DEA716F-5C4A-41E1-99FA-B838B7E5D7C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "..\ConsoleApp1\ConsoleApp1.csproj", "{B1648BFC-91CC-4F75-9C1E-DF82615D8339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "..\ConsoleApp1\ConsoleApp1.csproj", "{B1648BFC-91CC-4F75-9C1E-DF82615D8339}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_Preprocessor_WPF", "..\..\..\..\source\repos\Interface_Preprocessor_WPF\Interface_Preprocessor_WPF.csproj", "{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "..\Tests\Tests.csproj", "{EF50846E-2518-4C85-80A9-0E15FB8AB2BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF50846E-2518-4C85-80A9-0E15FB8AB2BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF50846E-2518-4C85-80A9-0E15FB8AB2BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF50846E-2518-4C85-80A9-0E15FB8AB2BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF50846E-2518-4C85-80A9-0E15FB8AB2BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
