@@ -67,3 +67,13 @@ Console.WriteLine("|                 SUCCESS!                |");
 Console.WriteLine("===========================================");
 
 
+
+
+// Получаем зашифрованные записи
+DataEncryptor encryptor = new DataEncryptor(workbook, excelFile1.AppropriateValues, excelFile1.PropertyNames, excelFile1.NamesAndShortNames);
+List<BigInteger> encryptedRecords2 = encryptor.GetEncryptedRecords();
+
+// Запись бинарных классов и зашифрованных записей в файл
+string outputPath = "output.txt";
+DataWriter.WriteEncryptedDataToFile(excelFile1.PropertyNames, encryptedRecords2, outputPath);
+
