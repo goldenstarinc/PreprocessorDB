@@ -74,6 +74,5 @@ DataEncryptor encryptor = new DataEncryptor(workbook, excelFile1.AppropriateValu
 List<BigInteger> encryptedRecords2 = encryptor.GetEncryptedRecords();
 
 // Запись бинарных классов и зашифрованных записей в файл
-string outputPath = "output.txt";
-DataWriter.WriteEncryptedDataToFile(excelFile1.PropertyNames, encryptedRecords2, outputPath);
+DataWriter.WriteEncryptedDataToFile(excelFile1.PropertyNames, encryptedRecords2, "output.txt");
 

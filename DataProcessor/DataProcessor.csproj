@@ -50,16 +50,13 @@
   <ItemGroup>
     <Compile Include="DataDecryptor.cs" />
     <Compile Include="DataEncryptor.cs" />
+    <Compile Include="DataReader.cs" />
     <Compile Include="DataWriter.cs" />
     <Compile Include="HeroRepository.cs" />
     <Compile Include="ExcelFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\source\repos\Interface_Preprocessor_WPF\Interface_Preprocessor_WPF.csproj">
-      <Project>{8ed0bb6f-a9cc-4121-95e6-6ce7d36684ce}</Project>
-      <Name>Interface_Preprocessor_WPF</Name>
-    </ProjectReference>
     <ProjectReference Include="..\HeroesLibrary\HeroesLibrary.csproj">
       <Project>{42e338e8-0972-40cc-9187-d2a22f48151a}</Project>
       <Name>HeroesLibrary</Name>

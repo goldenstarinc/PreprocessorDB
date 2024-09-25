@@ -21,12 +21,24 @@ namespace DataProcessor
         public Dictionary<string, string> NamesAndShortNames { get; private set; }
         public ExcelFile (string filePath)
         {
-            _workbook = new Workbook (filePath);
+            try
+            {
+                _workbook = new Workbook(filePath);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Ошибка при загрузке файла Excel: {ex.Message}");
+            }
 
             PropertyNames = GetPropertyNames();
             ColumnTypes = GetColumnTypes();
             AppropriateValues = GetAppropriateValues();
             NamesAndShortNames = GenerateNameToShortNameDictionary();
+        }
+
+        public Workbook GetWorkbook()
+        {
+            return _workbook;
         }
 
         /// <summary>
