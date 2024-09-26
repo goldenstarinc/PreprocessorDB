@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "..\ConsoleAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "..\Tests\Tests.csproj", "{EF50846E-2518-4C85-80A9-0E15FB8AB2BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_Preprocessor_WPF", "..\..\..\Interface_Preprocessor_WPF\Interface_Preprocessor_WPF.csproj", "{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_Preprocessor_WPF", "..\Interface_Preprocessor_WPF\Interface_Preprocessor_WPF.csproj", "{8ED0BB6F-A9CC-4121-95E6-6CE7D36684CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

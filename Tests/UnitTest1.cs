@@ -11,306 +11,306 @@ using System.Reflection;
 public class DataProcessorTests
 {
 
-    // Тесты для класса DataDecriptor
+    // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ DataDecriptor
 
-    // Тест на проверку того, что метод дешифровки возвращает непустой список
+    // пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     [Fact]
     public void DataDecryptor_GetDecryptedRecords_ShouldReturnNonEmptyList()
     {
-        // Создаем тестовый список зашифрованных данных
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         List<BigInteger> encryptedRecords = new List<BigInteger> { new BigInteger(3) };
-        // Создаем список имён свойств
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         List<string> propertyNames = new List<string> { "Property1", "Property2" };
 
-        // Создаем экземпляр класса дешифратора с тестовыми данными
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         DataDecryptor decryptor = new DataDecryptor(encryptedRecords, propertyNames);
 
-        // Вызываем метод дешифровки для получения исходных данных
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         List<List<string>> decryptedRecords = decryptor.GetDecryptedRecords();
 
         // Assert
-        // Проверяем, что список расшифрованных данных не пустой
-        Assert.NotNull(decryptedRecords); // Список не должен быть null
-        Assert.NotEmpty(decryptedRecords); // Список не должен быть пустым
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.NotNull(decryptedRecords); // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ null
+        Assert.NotEmpty(decryptedRecords); // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     }
 
     /// <summary>
-    /// Тест для проверки корректности расшифровки одной записи
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     /// </summary>
     [Fact]
     public void GetDecryptedRecords_ShouldReturnCorrectNames_WhenSingleRecordIsEncrypted()
     {
-        // Подготовка
-        var encryptedRecords = new List<BigInteger> { new BigInteger(3) }; // 3 в двоичной системе - 11, что соответствует Property1 и Property2
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        var encryptedRecords = new List<BigInteger> { new BigInteger(3) }; // 3 пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ - 11, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Property1 пїЅ Property2
         var propertyNames = new List<string> { "Property1", "Property2", "Property3" };
 
         var decryptor = new DataDecryptor(encryptedRecords, propertyNames);
 
-        // Действие
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var result = decryptor.GetDecryptedRecords();
 
-        // Результат
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         Assert.NotNull(result);
-        Assert.Single(result); // Ожидаем, что будет одна запись
-        Assert.Equal(new List<string> { "Property1", "Property2" }, result[0]); // Проверяем, что расшифровка верна
+        Assert.Single(result); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(new List<string> { "Property1", "Property2" }, result[0]); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     }
 
     /// <summary>
-    /// Тест для проверки корректности расшифровки нескольких записей
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     /// </summary>
     [Fact]
     public void GetDecryptedRecords_ShouldReturnCorrectNames_WhenMultipleRecordsAreEncrypted()
     {
-        // Подготовка
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var encryptedRecords = new List<BigInteger> { new BigInteger(3), new BigInteger(5) }; // 3 -> Property1, Property2; 5 -> Property1, Property3
         var propertyNames = new List<string> { "Property1", "Property2", "Property3" };
 
         var decryptor = new DataDecryptor(encryptedRecords, propertyNames);
 
-        // Действие
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var result = decryptor.GetDecryptedRecords();
 
-        // Результат
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         Assert.NotNull(result);
-        Assert.Equal(2, result.Count); // Ожидаем две расшифрованные записи
+        Assert.Equal(2, result.Count); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-        Assert.Equal(new List<string> { "Property1", "Property2" }, result[0]); // Первая запись
-        Assert.Equal(new List<string> { "Property1", "Property3" }, result[1]); // Вторая запись
+        Assert.Equal(new List<string> { "Property1", "Property2" }, result[0]); // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(new List<string> { "Property1", "Property3" }, result[1]); // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     }
 
     /// <summary>
-    /// Тест для проверки корректности расшифровки записи, содержащей только один бит
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
     /// </summary>
     [Fact]
     public void GetDecryptedRecords_ShouldReturnCorrectName_WhenSingleBitIsSet()
     {
-        // Подготовка
-        var encryptedRecords = new List<BigInteger> { new BigInteger(1) }; // 1 в двоичной системе - 01, что соответствует только Property1
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        var encryptedRecords = new List<BigInteger> { new BigInteger(1) }; // 1 пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ - 01, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ Property1
         var propertyNames = new List<string> { "Property1", "Property2", "Property3" };
 
         var decryptor = new DataDecryptor(encryptedRecords, propertyNames);
 
-        // Действие
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var result = decryptor.GetDecryptedRecords();
 
-        // Результат
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         Assert.NotNull(result);
-        Assert.Single(result); // Ожидаем, что будет одна запись
-        Assert.Equal(new List<string> { "Property1" }, result[0]); // Проверяем, что расшифровка верна
+        Assert.Single(result); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(new List<string> { "Property1" }, result[0]); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     }
 
 
 
 
-    // Тесты для класса DataWriter
+    // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ DataWriter
 
-    // Тест на проверку корректной записи зашифрованных данных в файл
+    // пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
     [Fact]
     public void DataWriter_WriteEncryptedDataToFile_ShouldCreateFile()
     {
-        // Подготовка
-        // Создаем список имён свойств
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         List<string> propertyNames = new List<string> { "Property1", "Property2" };
-        // Создаем список зашифрованных записей
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         List<BigInteger> encryptedRecords = new List<BigInteger> { new BigInteger(10), new BigInteger(20) };
-        // Указываем путь к тестовому файлу
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         string filePath = "test_output.txt";
 
-        // Вызываем метод записи данных в файл
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
         DataWriter.WriteEncryptedDataToFile(propertyNames, encryptedRecords, filePath);
 
-        // Проверяем, что файл был создан
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         Assert.True(File.Exists(filePath));
 
-        // Удаление файла после проверки, чтобы не засорять систему
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         File.Delete(filePath);
     }
 
 
 
 
-    // Тесты для класса DataEncryptor
+    // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ DataEncryptor
 
     [Fact]
     public void DataEncryptor_GetEncryptedRecords_ShouldReturnNonEmptyList()
     {
-        // Создание workbook с помощью Aspose.Cells
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ workbook пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ Aspose.Cells
         Workbook workbook = new Workbook();
         Worksheet worksheet = workbook.Worksheets[0];
         Cells cells = worksheet.Cells;
 
-        // Заполнение данных в ячейках для теста
-        cells[0, 0].PutValue("Название");
-        cells[0, 1].PutValue("Число значений");
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        cells[0, 0].PutValue("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
+        cells[0, 1].PutValue("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
         cells[1, 0].PutValue("Item1");
         cells[1, 1].PutValue(5);
         cells[2, 0].PutValue("Item2");
         cells[2, 1].PutValue(10);
 
-        // Данные для шифрования
+        // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         List<List<string>> data = new List<List<string>>()
             {
                 new List<string> { "Item1", "5" },
                 new List<string> { "Item2", "10" }
             };
 
-        // Имена колонок
-        List<string> columnNames = new List<string> { "Название", "Число значений" };
+        // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        List<string> columnNames = new List<string> { "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" };
 
-        // Сопоставление колонок
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         Dictionary<string, string> mappings = new Dictionary<string, string>()
             {
-                { "Название", "Name" },
-                { "Число значений", "ValueCount" }
+                { "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "Name" },
+                { "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "ValueCount" }
             };
 
-        // Создание объекта DataEncryptor
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ DataEncryptor
         DataEncryptor encryptor = new DataEncryptor(workbook, data, columnNames, mappings);
 
-        // Выполнение метода для шифрования
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var result = encryptor.GetEncryptedRecords();
 
-        // Проверка, что результат не пустой
-        Assert.NotNull(result); // Проверяем, что результат не null
-        Assert.NotEmpty(result); // Проверяем, что список не пустой
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.NotNull(result); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ null
+        Assert.NotEmpty(result); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     }
 
     /// <summary>
-    /// Тест на проверку, если значение клетки меньше минимально допустимого значения.
-    /// Должен вернуть -1.
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
+    /// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ -1.
     /// </summary>
     [Fact]
     public void FindClassIndexForCellValue1()
     {
-        // Подготовка
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var dataProcessor = new DataEncryptor(new Workbook(), new List<List<string>>(), new List<string>(), new Dictionary<string, string>());
         var appropriateValues = new List<List<string>>
         {
-            new List<string> { "10", "20", "30" }  // Допустимые значения для столбца 0
+            new List<string> { "10", "20", "30" }  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 0
         };
 
-        // Установка приватного поля _appropriateValues через рефлексию
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ _appropriateValues пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var fieldInfo = typeof(DataEncryptor).GetField("_appropriateValues", BindingFlags.NonPublic | BindingFlags.Instance);
         fieldInfo.SetValue(dataProcessor, appropriateValues);
 
-        string cellValue = "5";  // Значение клетки, меньше минимального допустимого
+        string cellValue = "5";  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         int columnIndex = 0;
 
-        // Используем рефлексию для вызова закрытого метода
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         var methodInfo = typeof(DataEncryptor).GetMethod("FindClassIndexForCellValue", BindingFlags.NonPublic | BindingFlags.Instance);
         int result = (int)methodInfo.Invoke(dataProcessor, new object[] { cellValue, columnIndex });
 
-        // Результат
-        Assert.Equal(-1, result);  // Ожидаем, что метод вернёт -1
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(-1, result);  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -1
     }
 
     [Fact]
     public void FindClassIndexForCellValue2()
     {
-        // Подготовка
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var dataProcessor = new DataEncryptor(new Workbook(), new List<List<string>>(), new List<string>(), new Dictionary<string, string>());
         var appropriateValues = new List<List<string>>
         {
-            new List<string> { "10", "20", "30", "40", "50" }  // Допустимые значения для столбца 0
+            new List<string> { "10", "20", "30", "40", "50" }  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 0
         };
 
-        // Установка приватного поля _appropriateValues через рефлексию
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ _appropriateValues пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var fieldInfo = typeof(DataEncryptor).GetField("_appropriateValues", BindingFlags.NonPublic | BindingFlags.Instance);
         fieldInfo.SetValue(dataProcessor, appropriateValues);
 
-        string cellValue = "50";  // Значение клетки
+        string cellValue = "50";  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         int columnIndex = 0;
 
-        // Используем рефлексию для вызова закрытого метода
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         var methodInfo = typeof(DataEncryptor).GetMethod("FindClassIndexForCellValue", BindingFlags.NonPublic | BindingFlags.Instance);
         int result = (int)methodInfo.Invoke(dataProcessor, new object[] { cellValue, columnIndex });
 
-        // Результат
-        Assert.Equal(4, result);  // Ожидаем, что метод вернёт -1
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(4, result);  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -1
     }
 
     [Fact]
     public void FindClassIndexForCellValue3()
     {
-        // Подготовка
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var dataProcessor = new DataEncryptor(new Workbook(), new List<List<string>>(), new List<string>(), new Dictionary<string, string>());
         var appropriateValues = new List<List<string>>
         {
-            new List<string> { "10", "20", "30", "40", "50" }  // Допустимые значения для столбца 0
+            new List<string> { "10", "20", "30", "40", "50" }  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 0
         };
 
-        // Установка приватного поля _appropriateValues через рефлексию
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ _appropriateValues пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var fieldInfo = typeof(DataEncryptor).GetField("_appropriateValues", BindingFlags.NonPublic | BindingFlags.Instance);
         fieldInfo.SetValue(dataProcessor, appropriateValues);
 
-        string cellValue = "45";  // Значение клетки
+        string cellValue = "45";  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         int columnIndex = 0;
 
-        // Используем рефлексию для вызова закрытого метода
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         var methodInfo = typeof(DataEncryptor).GetMethod("FindClassIndexForCellValue", BindingFlags.NonPublic | BindingFlags.Instance);
         int result = (int)methodInfo.Invoke(dataProcessor, new object[] { cellValue, columnIndex });
 
-        // Результат
-        Assert.Equal(3, result);  // Ожидаем, что метод вернёт -1
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(3, result);  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ -1
     }
 
     /// <summary>
-    /// Тест для проверки, что метод шифрования возвращает пустой список, когда нет данных.
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
     /// </summary>
     [Fact]
     public void DataEncryptor_GetEncryptedRecords_ShouldReturnEmptyList_WhenNoData()
     {
-        // Создаем пустую рабочую книгу Excel
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ Excel
         var workbook = new Workbook();
 
-        // Создаем пустой список данных
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         var data = new List<List<string>>();
 
-        // Создаем пустой словарь для шифрования
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var mappings = new Dictionary<string, string>();
 
-        // Создаем экземпляр DataEncryptor с пустыми данными
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ DataEncryptor пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var encryptor = new DataEncryptor(workbook, data, new List<string>(), mappings);
 
-        // Получаем зашифрованные записи
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         var result = encryptor.GetEncryptedRecords();
 
-        // Проверяем, что результат не null и пустой
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ null пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         Assert.NotNull(result);
-        Assert.Empty(result);  // Ожидаем пустой список, так как данных нет
+        Assert.Empty(result);  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
     }
 
 
 
 
 
-    // Тесты для класса Hero
+    // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ Hero
 
     /// <summary>
-    /// Тест для проверки, что герой корректно инициализируется.
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
     /// </summary>
     [Fact]
     public void Hero_ShouldInitializeCorrectly()
     {
-        // Подготовка
-        var hero = new Hero("John", "100", 10, "magical", 30, "Low");  // Инициализация героя
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        var hero = new Hero("John", "100", 10, "magical", 30, "Low");  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-        // Проверка свойств героя
-        Assert.Equal("John", hero.Name);  // Проверяем имя героя
-        Assert.Equal("100", hero.Main_attribute);   // Проверяем здоровье героя
-        Assert.Equal(10, hero.Damage);  // Проверяем атаку героя
-        Assert.Equal("magical", hero.Attack_type); // Проверяем тип атаки
-        Assert.Equal(30, hero.Move_speed); // Проверяем скорость движения
-        Assert.Equal("Low", hero.Difficulty); // Проверяем уровень сложности
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal("John", hero.Name);  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal("100", hero.Main_attribute);   // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(10, hero.Damage);  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal("magical", hero.Attack_type); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(30, hero.Move_speed); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal("Low", hero.Difficulty); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     }
 
     /// <summary>
-    /// Тест для проверки, что герой корректно инициализируется с другими значениями.
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
     /// </summary>
     [Fact]
     public void Hero_ShouldInitializeCorrectly2()
     {
-        // Подготовка данных для героя
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         string name = "John";
         string mainAttribute = "Strength";
         int damage = 50;
@@ -318,80 +318,80 @@ public class DataProcessorTests
         int moveSpeed = 300;
         string difficulty = "Medium";
 
-        // Инициализация героя
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         var hero = new Hero(name, mainAttribute, damage, attackType, moveSpeed, difficulty);
 
-        // Проверка свойств героя
-        Assert.Equal("John", hero.Name);                  // Проверяем имя героя
-        Assert.Equal("Strength", hero.Main_attribute);    // Проверяем основной атрибут героя
-        Assert.Equal(50, hero.Damage);                    // Проверяем урон героя
-        Assert.Equal("Melee", hero.Attack_type);          // Проверяем тип атаки героя
-        Assert.Equal(300, hero.Move_speed);               // Проверяем скорость передвижения героя
-        Assert.Equal("Medium", hero.Difficulty);          // Проверяем сложность управления героем
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal("John", hero.Name);                  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal("Strength", hero.Main_attribute);    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(50, hero.Damage);                    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal("Melee", hero.Attack_type);          // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal(300, hero.Move_speed);               // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.Equal("Medium", hero.Difficulty);          // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     }
 
     /// <summary>
-    /// Тест для проверки, что урон героя находится в допустимом диапазоне.
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
     /// </summary>
     [Fact]
     public void Hero_ShouldHaveValidDamage()
     {
-        // Подготовка
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var hero = new Hero("John", "Strength", 50, "Melee", 300, "Medium");
 
-        // Действие
-        int damage = hero.Damage; // Получаем значение урона героя
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        int damage = hero.Damage; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-        // Проверка диапазона урона
-        Assert.InRange(damage, 0, 1000);  // Ожидаем, что урон находится в диапазоне от 0 до 1000
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+        Assert.InRange(damage, 0, 1000);  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 0 пїЅпїЅ 1000
     }
 
     /// <summary>
-    /// Тест для проверки, что скорость передвижения героя находится в допустимом диапазоне.
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.
     /// </summary>
     [Fact]
     public void Hero_ShouldHaveValidMoveSpeed()
     {
-        // Подготовка
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var hero = new Hero("John", "Agility", 45, "Ranged", 500, "Hard");
 
-        // Действие
-        int moveSpeed = hero.Move_speed; // Получаем значение скорости передвижения героя
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        int moveSpeed = hero.Move_speed; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
-        // Проверка диапазона скорости передвижения
-        Assert.InRange(moveSpeed, 100, 600);  // Ожидаем, что скорость находится в диапазоне от 100 до 600
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        Assert.InRange(moveSpeed, 100, 600);  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 100 пїЅпїЅ 600
     }
 
     /// <summary>
-    /// Тест для проверки работы различных типов атак у героев.
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
     /// </summary>
     [Fact]
     public void Hero_ShouldHandleDifferentAttackTypes()
     {
-        // Подготовка
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var meleeHero = new Hero("MeleeHero", "Strength", 60, "Melee", 350, "Easy");
         var rangedHero = new Hero("RangedHero", "Agility", 40, "Ranged", 400, "Hard");
 
-        // Проверка типа атаки у героя ближнего боя
-        Assert.Equal("Melee", meleeHero.Attack_type);   // Ожидаем тип атаки "Melee"
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+        Assert.Equal("Melee", meleeHero.Attack_type);   // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "Melee"
 
-        // Проверка типа атаки у героя дальнего боя
-        Assert.Equal("Ranged", rangedHero.Attack_type); // Ожидаем тип атаки "Ranged"
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
+        Assert.Equal("Ranged", rangedHero.Attack_type); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ "Ranged"
     }
 
     /// <summary>
-    /// Тест для проверки уровня сложности управления героем.
+    /// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
     /// </summary>
     [Fact]
     public void Hero_ShouldHaveDifficultyLevel()
     {
-        // Подготовка
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         var hero = new Hero("John", "Intelligence", 30, "Magic", 280, "Medium");
 
-        // Действие
-        string difficulty = hero.Difficulty; // Получаем уровень сложности
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        string difficulty = hero.Difficulty; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-        // Проверка, что уровень сложности является допустимым
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         Assert.True(difficulty == "Easy" || difficulty == "Medium" || difficulty == "Hard", "Difficulty should be valid");
     }
 }

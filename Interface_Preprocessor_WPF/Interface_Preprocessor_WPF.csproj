@@ -131,7 +131,7 @@
     <Resource Include="93141010b2f80c45f9fc10c82fe2f0c1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GitHub\PreprocessorDB\DataProcessor\DataProcessor.csproj">
+    <ProjectReference Include="..\DataProcessor\DataProcessor.csproj">
       <Project>{3dea716f-5c4a-41e1-99fa-b838b7e5d7c0}</Project>
       <Name>DataProcessor</Name>
     </ProjectReference>
