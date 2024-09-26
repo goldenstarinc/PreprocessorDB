@@ -174,5 +174,11 @@ namespace Interface_Preprocessor_WPF
                 customMessageBox.ShowDialog();
             }
         }
+
+        private void OpenInfo_Click(object sender, RoutedEventArgs e)
+        {
+            InfoPage infoPage = new InfoPage();
+            infoPage.Show();
+        }
     }
 }

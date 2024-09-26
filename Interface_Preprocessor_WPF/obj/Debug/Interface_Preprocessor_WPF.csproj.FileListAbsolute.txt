@@ -101,3 +101,5 @@ C:\Users\Ruslan\Desktop\GitHub\PreprocessorDB\Interface_Preprocessor_WPF\obj\Deb
 C:\Users\Ruslan\Desktop\GitHub\PreprocessorDB\Interface_Preprocessor_WPF\obj\Debug\Interfac.92C99854.Up2Date
 C:\Users\Ruslan\Desktop\GitHub\PreprocessorDB\Interface_Preprocessor_WPF\obj\Debug\Interface_Preprocessor_WPF.exe
 C:\Users\Ruslan\Desktop\GitHub\PreprocessorDB\Interface_Preprocessor_WPF\obj\Debug\Interface_Preprocessor_WPF.pdb
+C:\Users\Ruslan\Desktop\GitHub\PreprocessorDB\Interface_Preprocessor_WPF\obj\Debug\InfoPage.g.cs
+C:\Users\Ruslan\Desktop\GitHub\PreprocessorDB\Interface_Preprocessor_WPF\obj\Debug\InfoPage.baml

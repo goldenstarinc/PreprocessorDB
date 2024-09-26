@@ -50,5 +50,11 @@ namespace Interface_Preprocessor_WPF
                 }
             } 
         }
+
+        private void OpenInfo_Click(object sender, RoutedEventArgs e)
+        {
+            InfoPage InfoPage = new InfoPage();
+            InfoPage.Show();
+        }
     }
 }
