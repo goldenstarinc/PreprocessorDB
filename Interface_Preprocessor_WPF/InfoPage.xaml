@@ -11,9 +11,8 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="29*"/>
         </Grid.RowDefinitions>
-        <Rectangle Stroke="#FF00ACFF" Fill="#FF00ACFF" Margin="0,0,0,1"/>
-        <TextBlock Margin="10,7,210,0" TextWrapping="Wrap" Text="Справка" FontFamily="Segoe UI Variable Display" FontSize="36" Height="46" VerticalAlignment="Top"/>
         <Image Height="621" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Center" Width="1255" Source="/InfoPageImg1.png"/>
+        <TextBlock HorizontalAlignment="Left" Height="66" Margin="25,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="743" FontFamily="Segoe UI Variable Display" FontSize="45" FontWeight="Bold" Foreground="Black"><Run Text="&gt; " Foreground="#FF00ACFF"/><Run Language="ru-ru" Text="Справка"/></TextBlock>
 
     </Grid>
 </Window>
